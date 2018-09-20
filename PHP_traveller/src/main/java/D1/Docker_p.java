@@ -71,7 +71,8 @@ public class Docker_p {
 		
 		driver.findElement(By.name("password")).sendKeys("demouser");
 		System.out.println("pass entered");
-		driver.findElement(By.xpath("//*[@id='loginfrm']/div[1]/div[5]/button")).click();
+		//driver.findElement(By.xpath("//*[@id='loginfrm']/div[1]/div[5]/button")).click();
+	        driver.findElement(By.xpath("//form[@id='loginfrm']/button")).click();
 		System.out.println("loggedin");
 		
 	}
